@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test{
+            border: 2px solid black;
+
+            /* Normal Way to give individual padding */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* Shorthands to give the property */
+            padding: 10px; /* Here 10px padding was gone to all the sides of the element*/
+            padding: 10px 15px 10px 15px; /*Here the value was given in the clockwise direction Top right Bottom Left*/
+            padding: 10px 15px; /* Here 1st value was for the top and bottom and 2 for the left and right */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Tutorial: Padding</h1>
+
+    <div class="test">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error ea aut delectus vero quia.</p>
+    </div>
+
+    <!-- Padding is just to give the space inside the element -->
+
+    <!-- 
+        Properties of Padding
+
+        padding-top: 25px; Gives the padding at the top
+        padding-left: 15px; Gives the padding at the left
+        padding-right: 35px; Gives the padding at the Right
+        padding-bottom: 40px; Gives the padding at the bottom
+
+        padding: 25px; Gives the padding all sides
+        
+        padding: 25px 15px 35px 40px;
+        Here the first value is for top second for right third for bottom and fourth for left
+        It will work as clockwise [top-right-bottom-left]
+
+        padding: 25px 15px;
+        1 value 25px was given at both top and bottom and 15px was given to the right and left
+     -->
+</body>
+</html>
