@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .navbar{
+            position: fixed;
+            display: flex;
+            width: 100%;
+            background-color: rgb(128, 128, 128);
+        }
+
+        #logo{
+            height: 25px;
+            margin: 12px 12px;
+        }
+
+        #logo img{
+            height: 25px;
+
+        }
+
+        ul{
+            list-style: none;
+            float: right;
+        }
+
+        .items{
+            float: left;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div id="logo">
+            <img src="https://source.unsplash.com/random" alt="">
+        </div>
+
+        <div id="search">
+            <input type="text">
+        </div>
+        <ul>
+            <li class="items">
+                <a href="#">Home</a>
+            </li>
+            <li class="items">
+                <a href="#">Contact US</a>
+            </li>
+            <li class="items">
+                <a href="#">Service</a>
+            </li>
+            <li class="items">
+                <a href="#">About us</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
