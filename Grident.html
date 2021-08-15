@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linear Grident</title>
+    <title>Linear Gradient</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
     <style>
-        
-        .btn{
-            padding: 5px 20px;
-            font-size: 20px;
-            font-weight: 600;
-            text-transform: uppercase;
-            border: 2px solid black;
-            background: linear-gradient(240deg,blue,rgb(255, 0, 200));
-            transition: all ease-in-out 5s 1s;
-            animation: Alls ease-in-out infinite 5s 5s 5s;
+        body{
+            font-family: 'Inconsolata', monospace;
         }
 
-        .btn:hover{
-            background: linear-gradient(120deg,blue,rgb(255,0,200));
+        .box{
+            width: 800px;
+            height: 300px;
+            padding: 15px;
+            border: 1px solid hsl(250, 25%, 0%);
+            /* linear-gradient */
+            background: linear-gradient(to bottom right ,red,yellow);
+            background: linear-gradient(-45deg,red,yellow,rgb(0,0,255));
+
+            /* Repeating linear gradient */
+            background: repeating-linear-gradient(72deg,red 25%,blue 10%,green);
         }
-        *{
-            background: linear-gradient(240deg,rgb(255, 0, 0),rgb(255, 166, 0));
+
+        .box2{
+            width: 800px;
+            height: 300px;
+            padding: 15px;
+            border: 1px solid hsl(250, 25%, 0%);
+            background: repeating-radial-gradient(closest-side at 90% 20%, yellow,green,blue,orange);
+            background: radial-gradient(closest-corner at 05% 05%, yellow,green,blue,orange);
         }
     </style>
 </head>
-
 <body>
-    <button class="btn">Submit</button>
-</body>
 
+    <h1>CSS Tutorial : Linear Gradient</h1>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quaerat corporis ipsam sed accusamus cum!
+        </p>
+    </div>
+    <div class="box2">
+        <h2>Radical Gradient</h2>
+    </div>
+</body>
 </html>

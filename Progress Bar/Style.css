@@ -1,86 +1,39 @@
 @import "https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap";
 
 body{
-  font-family: 'Inconsolata', monospace;
-  background-color: #6f7069;
-}
-
-.container{
-  background: linear-gradient(145deg,#3972ed,#7f088c);
-  margin: 50px;
-  min-width: 95vh;
   display: flex;
-  flex-direction: column;
-  min-height: 250px;
-  padding: 12px;
-  color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 7px 7px 6px black;
-}
 
-.container .h2{
-  font-size: 1.9rem;
-  text-align: center;
-  font-weight: bolder;
-  border-bottom: 1px solid red;
-  padding-bottom: 12px
+  align-items: center;
+  background-color: grey;
 }
 
 .progress{
-  padding: 12px;
-  font-size: 1.4rem;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 2px solid black;
+  min-width: 900px;
+  min-height: 400px;
 }
 
-.scale{
-  height: 6.5px;
-  width: 100%;
-  background-color: red;
-  margin: 15px 0px;
-  border-radius: 22px;
-
-  /* Animation Here */
-  animation-name: Progress_Anime;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+.progress .head{
+      text-align: center;
 }
 
-.container span{
-  display: block;
-  float: right;
-  position: relative;
-  bottom: 40px;
-  left: 15px;
+.progress h2{
+  font-size: 45px;
+  background: linear-gradient(125deg,#073c9e,#c303aa);
+  -webkit-background-clip: text;
+  color: transparent;
+  box-sizing: border-box;
 }
 
-.container #English{
-  width: 75%;
-  background: linear-gradient(145deg,#39ed11,#11edde);
+.container{
+  border: 1px solid black;
+  padding: 32px;
 }
 
-
-.container #Hindi{
-  width: 69%;
-  background: linear-gradient(145deg,#eda011,#d624c1);
-}
-
-
-.container #Maths{
-  width: 85%;
-  background: linear-gradient(125deg,#0ceb0c,#ff0000);
-}
-
-
-.container #Science{
-  width: 75%;
-  background: linear-gradient(145deg,#efefef,#0ce7eb);
-}
-
-
-.container #SST{
-  width: 75%;
-  background: linear-gradient(145deg,#39ed11,#ff1900);
+.Subjects{
+  height: 10px;
+  border: 1px solid black;
 }
