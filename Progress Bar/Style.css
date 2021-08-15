@@ -1,0 +1,86 @@
+@import "https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap";
+
+body{
+  font-family: 'Inconsolata', monospace;
+  background-color: #6f7069;
+}
+
+.container{
+  background: linear-gradient(145deg,#3972ed,#7f088c);
+  margin: 50px;
+  min-width: 95vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding: 12px;
+  color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 7px 7px 6px black;
+}
+
+.container .h2{
+  font-size: 1.9rem;
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: 1px solid red;
+  padding-bottom: 12px
+}
+
+.progress{
+  padding: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.scale{
+  height: 6.5px;
+  width: 100%;
+  background-color: red;
+  margin: 15px 0px;
+  border-radius: 22px;
+
+  /* Animation Here */
+  animation-name: Progress_Anime;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.container span{
+  display: block;
+  float: right;
+  position: relative;
+  bottom: 40px;
+  left: 15px;
+}
+
+.container #English{
+  width: 75%;
+  background: linear-gradient(145deg,#39ed11,#11edde);
+}
+
+
+.container #Hindi{
+  width: 69%;
+  background: linear-gradient(145deg,#eda011,#d624c1);
+}
+
+
+.container #Maths{
+  width: 85%;
+  background: linear-gradient(125deg,#0ceb0c,#ff0000);
+}
+
+
+.container #Science{
+  width: 75%;
+  background: linear-gradient(145deg,#efefef,#0ce7eb);
+}
+
+
+.container #SST{
+  width: 75%;
+  background: linear-gradient(145deg,#39ed11,#ff1900);
+}

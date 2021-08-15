@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            margin: 25px;
+        }
+
+        .box{
+            height: 10px;
+            width: 0%;
+            background: linear-gradient(125deg,red,orange);
+            animation-name: Lineara;
+            animation-duration: 4s;
+            border-radius: 50px;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes Lineara {
+            0%{
+                background: linear-gradient(150deg,blue,rgb(199, 8, 233));
+                width: 0%;
+            }
+            25%{
+                background: linear-gradient(150deg,rgb(51, 255, 0),rgb(245, 229, 7));
+                width: 25%;
+            }
+            50%{
+                background: linear-gradient(150deg,rgb(9, 241, 222),rgb(163, 14, 189));
+                width: 50%;
+            }
+            100%{
+                background: linear-gradient(150deg,rgb(9, 240, 201),rgb(240, 224, 7));
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

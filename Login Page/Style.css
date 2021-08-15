@@ -1,0 +1,90 @@
+@import "https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap";
+
+
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  display: flex;
+  margin: 12px;
+}
+
+.content{
+  margin: 12px;
+  border: 2px solid black;
+  min-width: 230px;
+  min-height: 250px;
+  border-radius: 9px;
+  padding: 12px;
+  box-shadow: 3px 3px 6px grey;
+}
+
+.icno{
+  display: block;
+  margin: 5px 0px;
+  margin-left: 92px;
+}
+
+.submit{
+  display: block;
+  padding-top: 22px;
+}
+
+.submit #sub{
+  width: 100%;
+  padding: 10px 0px;
+  outline: none;
+  border-radius: 50px;
+  font-family: 'Inconsolata';
+  font-size: 1.2em;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(145deg,#1945e3,#9919e3);
+  transition-property: all;
+  transition-duration: 2.5s;
+  transition-delay: .3s;
+  transition-timing-function: ease;
+}
+
+
+.info{
+  padding: 5px;
+  font-family: 'Inconsolata';
+
+}
+
+.info .heading{
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.info .para{
+  font-size: 1.2em;
+
+  text-align: center;
+  font-weight: 800;
+}
+
+
+.content:hover{
+  background: linear-gradient(120deg,#ffae00,#ff0800);
+  color:#fff;
+  box-shadow: 5px 5px 4px black;
+}
+
+.submit #sub:hover{
+  color: #000000;
+  background: linear-gradient(to bottom,#1945e3,#9919e3)
+}
+
+@@media (max-width:600px) {
+  .container{
+    flex-direction: column;
+  }
+}

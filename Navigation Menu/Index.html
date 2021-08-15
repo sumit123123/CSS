@@ -1,68 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            padding: 0%;
-            margin: 0%;
-        }
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <style media="screen">
 
-        .navbar{
-            position: fixed;
-            display: flex;
-            width: 100%;
-            background-color: rgb(128, 128, 128);
-        }
+      *{
+        font-family: 'Inconsolata', monospace;
+        font-weight: bold;
+      }
 
-        #logo{
-            height: 25px;
-            margin: 12px 12px;
-        }
+      .navbar{
+        display: flex;
+        background: linear-gradient(120deg,blue,pink);
+        height: 80px;
+        border-radius: 45px;
+        align-items: center;
+      }
 
-        #logo img{
-            height: 25px;
+      .Logo{
+        margin-left: 22px;
+        color: white;
 
-        }
+      }
 
-        ul{
-            list-style: none;
-            float: right;
-        }
+      .items{
+        list-style: none;
+        margin-left: 95px;
+        font-size: 25px;
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: 500;
+      }
 
-        .items{
-            float: left;
-            display: flex;
-            justify-content: center;
-        }
+    .Logo h2{
+      background: -webkit-linear-gradient(#ffff00, #660033);
+      -webkit-background-clip: text;
+      font-weight: 900;
+      cursor: pointer;
+      -webkit-text-fill-color: transparent;
+    }
+
+      .list{
+        display: flex;
+        padding-top: 7px;
+        align-items: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div id="logo">
-            <img src="https://source.unsplash.com/random" alt="">
-        </div>
-
-        <div id="search">
-            <input type="text">
-        </div>
-        <ul>
-            <li class="items">
-                <a href="#">Home</a>
-            </li>
-            <li class="items">
-                <a href="#">Contact US</a>
-            </li>
-            <li class="items">
-                <a href="#">Service</a>
-            </li>
-            <li class="items">
-                <a href="#">About us</a>
-            </li>
-        </ul>
+      <div class="Logo">
+        <h2>Navbar</h2>
+      </div>
+      <ul class="list">
+        <li class="items">Home</li>
+        <li class="items">About</li>
+        <li class="items">Contact</li>
+        <li class="items">Service</li>
+      </ul>
     </nav>
-</body>
+  </body>
 </html>

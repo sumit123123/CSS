@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Style+Script&display=swap"
+        rel="stylesheet">
+    <style>
+        .service {
+            display: flex;
+            font-weight: 700;
+            flex-direction: row;
+        }
+
+        .content {
+            min-height: 400px;
+            margin-left: 175px;
+            width: 245px;
+            max-height: 700px;
+            margin-top: 25px;
+            border: 2px solid black;
+        }
+
+        .icon_1{
+            margin-left: 25%;
+            margin-top: 22px;
+        }
+
+        .info{
+            text-align: center;
+        }
+
+        .p-primary{
+            padding: 0px 15px;
+            text-transform: uppercase;
+        }
+
+        .p-primary::first-letter{
+            font-size: 35px;
+        }
+
+        .info a{
+            text-decoration: none;
+            color: rgb(30, 255, 0);
+            cursor:pointer;
+        }
+
+        #Icon-2{
+            margin-left: 70px;
+        }
+
+        #Icon-3{
+            margin-left: 75px;
+        }
+
+
+        /* 
+        Card Id's
+        1. container-1
+        2. container-2
+        3. container-3
+        */
+
+        #container-1:hover{
+            background-color: red;
+            color: white;
+        }
+
+        #container-2:hover{
+            background-color: rgb(4, 0, 255);
+            color: white;
+        }
+
+        #container-3:hover{
+            background-color: rgb(0, 191, 255);
+            color: white;
+        }
+
+        @media (max-width:600px) {
+            .service{
+                flex-direction: column;
+                margin-right: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="service">
+        <div class="content" id="container-1">
+            <div class="icon_1" id="Icon-1">
+                <i class="fab fa-youtube fa-5x"></i>
+            </div>
+
+            <div class="info">
+                <h3 class="h3-primary">Youtube</h3>
+                <p class="p-primary">
+                    You can Follow Our Youtube channel. We are Always Uploading the HTML CSS JS Video Tutorail of the Components. <br> <a href="https://www.youtube.com/CodeWithHarry">Link</a>
+                </p>
+            </div>
+        </div>
+        <div class="content" id="container-2">
+            <div class="icon_1" id="Icon-2">
+                <i class="fab fa-facebook-square fa-5x"></i>
+            </div>
+
+            <div class="info">
+                <h3 class="h3-primary">Facebook</h3>
+                <p class="p-primary">
+                    You can Also Follow our Facebook page. We are regularly uploading meams about the coding and Computers. You are please to follow it <br> <a href="https://www.facebook.com/Baban Ghotane">Link</a>
+                </p>
+            </div>
+        </div>
+        <div class="content" id="container-3">
+            <div class="icon_1" id="Icon-3">
+                <i class="fab fa-twitter fa-5x"></i>
+            </div>
+
+            <div class="info">
+                <h3 class="h3-primary">Twitter</h3>
+                <p class="p-primary">
+                    Our some members are also active on the twitter and Gives you the New Update teh Programming world and Universe <br> <a href="#">Link</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/eed74c28eb.js" crossorigin="anonymous"></script>
+
+</html>

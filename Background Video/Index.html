@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Document 1</title><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style media="screen">
+      *{
+
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.12rem
+      }
+
+      .container{
+
+        min-height: 440px;
+        width: 270px;
+        border: 2px solid black;
+        display: flex;
+        color: #000000;
+        margin: 12px 15px;
+        flex-direction: column;
+        box-sizing: border-box;
+      }
+
+      .icon{
+        margin: 15px auto;
+      }
+
+      .content span{
+        color: #635c5b;
+      }
+      .content h3{
+        font-size: 1.12rem;
+        margin-bottom: 12px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .content{
+        margin-left: 12px;
+      }
+
+      .para{
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 2px;
+        font-variant: small-caps;
+        }
+
+        .btn{
+          display: block;
+          width: 95%;
+          margin-top: 12px;
+          margin-bottom: 25px;
+          border: 2px solid black;
+          font-weight: 900;
+          color: #000000;
+          text-transform: uppercase;
+          border-radius: 50px;
+          cursor: pointer;
+          background: linear-gradient(120deg,#ff0400,#ff9500)
+        }
+
+
+
+        #content-1:hover{
+          color: #ffffff;
+          background-color: #0fdef5;
+        }
+
+        #content-2:hover{
+          color: #ffffff;
+          background-color: #ff0015;
+        }
+
+        #content-3:hover{
+          background-color: #0008ff;
+          color: #ffffff;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="content-1">
+      <div class="icon">
+      <i class="fab fa-twitter fa-7x"></i>
+      </div>
+      <div class="content">
+          <h3>Lorem ipsum .</h3>
+          <span>13 Dec 2017</span>
+          <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <button type="button" name="button" class="btn">Read More</button>
+      </div>
+    </div>
+    <div class="container" id="content-2">
+      <div class="icon">
+      <i class="fab fa-youtube fa-7x"></i>
+      </div>
+      <div class="content">
+          <h3>Lorem ipsum .</h3>
+          <span>13 Dec 2017</span>
+          <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <button type="button" name="button" class="btn">Read More</button>
+      </div>
+    </div>
+    <div class="container" id="content-3">
+      <div class="icon">
+      <i class="fab fa-facebook fa-7x"></i>
+      </div>
+      <div class="content">
+          <h3>Lorem ipsum .</h3>
+          <span>13 Dec 2017</span>
+          <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <button type="button" name="button" class="btn">Read More</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://kit.fontawesome.com/eed74c28eb.js" crossorigin="anonymous"></script>
+</html>

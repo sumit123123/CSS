@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 10px;
+            width: 90px;
+            top: 90px;
+            background: linear-gradient(145deg,#8c0590,#043ca5);
+            position: relative;
+            animation: Anime 4s 1s infinite;
+            animation-fill-mode: both;
+            }
+
+        @keyframes Anime {
+            0%{
+                left: 0%;
+            }
+
+            50%{
+                left: 25%;
+                height: 100px;
+                width: 100px;
+                transform: rotate(90deg);
+            }
+            75%{
+                left: 50%;
+                height: 10px;
+                width: 90px;
+                transform: rotate(180deg);
+            }
+            100%{
+                left: 90%;
+                height: 100px;
+                width: 100px;
+                transform: rotate(240deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

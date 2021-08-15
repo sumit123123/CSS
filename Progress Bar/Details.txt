@@ -1,0 +1,33 @@
+Progress bar background color - #bbbdb1
+
+
+Progress score html code
+
+.container #English{
+  width: 75%;
+  background: linear-gradient(145deg,#39ed11,#11edde);
+}
+
+
+.container #Hindi{
+  width: 69%;
+  background: linear-gradient(145deg,#eda011,#d624c1);
+}
+
+
+.container #Maths{
+  width: 85%;
+  background: linear-gradient(125deg,#0ceb0c,#ff0000);
+}
+
+
+.container #Science{
+  width: 75%;
+  background: linear-gradient(145deg,#efefef,#0ce7eb);
+}
+
+
+.container #SST{
+  width: 75%;
+  background: linear-gradient(145deg,#0cf02a,#ff1900);
+}
