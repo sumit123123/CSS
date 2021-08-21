@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        .head{
+           border: 2px outset #ff0000; 
+           display: none;
+           /* Display none property hide the element and remove the element space */
+           display: block;
+           /* Display block property take all the space horizontally from start to end */
+           display: inline;
+           /* Display inline property take the actual lenght of the element. Some properties does not work when the element is inline */
+           }
+
+           p{
+               border: 1px solid red;
+               padding: 25px;
+           }
+        span{
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 25px;
+
+            /* Margin and Padding did not properly work in inline elements like span so by turning them into the inline-block we can use both the power of inline and block element */
+        }
+
+        span{
+            display: list-item;
+            width: 225px;
+            list-style-position: inside;
+
+            /* 
+            Display list item property help us to set the items like a li list items with the help of bullets and block powers but you can remove change the bullets and use the margin and inline property also
+            */
+        }
+    </style>
+</head>
+<body>
+    <h3 class="head">
+        CSS Tutorial : Display Property
+    </h3>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati distinctio aperiam!
+    </p>
+    <span>Span 1</span>
+    <span>Span 2</span>
+    <span>Span 3</span>
+    <span>Span 4</span>
+</body>
+</html>
